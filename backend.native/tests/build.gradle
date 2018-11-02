@@ -2556,10 +2556,10 @@ task inline_statementAsLastExprInBlock(type: RunKonanTest) {
     source = "codegen/inline/statementAsLastExprInBlock.kt"
 }
 
-task inline_returnLocalClassFromBlock(type: RunKonanTest) {
-    goldValue = "Zzz\n"
-    source = "codegen/inline/returnLocalClassFromBlock.kt"
-}
+//task inline_returnLocalClassFromBlock(type: RunKonanTest) {
+//    goldValue = "Zzz\n"
+//    source = "codegen/inline/returnLocalClassFromBlock.kt"
+//}
 
 task inline_changingCapturedLocal(type: RunKonanTest) {
     goldValue = "OK\n"

@@ -16,5 +16,5 @@ inline fun <R> call(block: ()->R): R {
 }
 
 @Test fun runTest() {
-    call { class Z(); Z() }
+    //call { class Z(); Z() }
 }
