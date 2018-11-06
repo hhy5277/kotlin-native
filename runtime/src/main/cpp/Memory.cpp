@@ -577,7 +577,7 @@ inline void DecrementRC(ContainerHeader* container, bool useCycleCollector) {
         container->setBuffered();
         auto state = memoryState;
         state->toFree->push_back(container);
-        if (state->gcSuspendCount == 0 && freeableSize(state) >= state->gcThreshold) {
+        if (state->gcSuspendCount == 0 && !state->gcInProgress && freeableSize(state) >= state->gcThreshold) {
           GarbageCollect();
         }
       }
